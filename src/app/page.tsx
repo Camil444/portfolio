@@ -96,22 +96,54 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:px-12">
         <h2 className="mb-12 text-[22px] font-bold">Derniers travaux</h2>
 
+        {/* Projet 1 — Data Job Analysis */}
         <a
-          href="https://french-top-charts-analytics-2wf17g1mu-camil444s-projects.vercel.app/"
+          href="https://data-job-analysis.vercel.app/overview"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col gap-10 md:flex-row"
         >
-          {/* Image */}
+          {/* Image — gauche */}
           <div className="overflow-hidden rounded-[16px] md:w-1/2">
             <img
-              src="/dashboard_example.png"
-              alt="Dashboard Top 200 SNEP"
+              src="/datajob_dashboard.png"
+              alt="Dashboard emploi data France"
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
             />
           </div>
 
-          {/* Contenu */}
+          {/* Contenu — droite, aligné à droite */}
+          <div className="flex flex-col justify-center md:w-1/2 md:items-end md:text-right">
+            <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
+            <h3 className="text-[20px] font-bold leading-tight">
+              Le marché de la data en France ↗
+            </h3>
+            <p className="mt-4 text-[15px] leading-[1.7] text-text-secondary">
+              Ce dashboard analyse les offres d&apos;emploi dans la data en France en collectant et croisant des milliers d&apos;offres provenant de LinkedIn, Indeed ainsi que France Travail. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2 md:justify-end">
+              {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-black/5 px-3 py-1 text-[12px] font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+      </section>
+
+      {/* Projet 2 — SNEP */}
+      <section className="mx-auto max-w-5xl px-6 pb-24 md:px-12">
+        <a
+          href="https://french-top-charts-analytics-2wf17g1mu-camil444s-projects.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col-reverse gap-10 md:flex-row"
+        >
+          {/* Contenu — gauche */}
           <div className="flex flex-col justify-center md:w-1/2">
             <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
             <h3 className="text-[20px] font-bold leading-tight">
@@ -131,43 +163,12 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </a>
-      </section>
-
-      {/* Projet 2 — Data Job Analysis */}
-      <section className="mx-auto max-w-5xl px-6 pb-24 md:px-12">
-        <a
-          href="https://data-job-analysis.vercel.app/overview"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex flex-col-reverse gap-10 md:flex-row"
-        >
-          {/* Contenu — gauche */}
-          <div className="flex flex-col justify-center md:w-1/2">
-            <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
-            <h3 className="text-[20px] font-bold leading-tight">
-              Le marché de la data en France ↗
-            </h3>
-            <p className="mt-4 text-[15px] leading-[1.7] text-text-secondary">
-              Ce dashboard analyse les offres d&apos;emploi dans la data en France en collectant et croisant des milliers d&apos;offres provenant de LinkedIn, Indeed ainsi que France Travail. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full bg-black/5 px-3 py-1 text-[12px] font-medium"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
 
           {/* Image — droite */}
           <div className="overflow-hidden rounded-[16px] md:w-1/2">
             <img
-              src="/datajob_dashboard.png"
-              alt="Dashboard emploi data France"
+              src="/dashboard_example.png"
+              alt="Dashboard Top 200 SNEP"
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
             />
           </div>
