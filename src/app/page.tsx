@@ -133,6 +133,46 @@ export default function Home() {
           </div>
         </a>
       </section>
+
+      {/* Projet 2 — Data Job Analysis */}
+      <section className="mx-auto max-w-5xl px-6 pb-24 md:px-12">
+        <a
+          href="https://data-job-analysis.vercel.app/overview"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col-reverse gap-10 md:flex-row"
+        >
+          {/* Contenu — gauche */}
+          <div className="flex flex-col justify-center md:w-1/2">
+            <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
+            <h3 className="text-[20px] font-bold leading-tight">
+              Le marché de l&apos;emploi data en France ↗
+            </h3>
+            <p className="mt-4 text-[15px] leading-[1.7] text-text-secondary">
+              Ce dashboard analyse le marché de l&apos;emploi data en France en collectant et croisant des milliers d&apos;offres provenant de plusieurs plateformes. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-black/5 px-3 py-1 text-[12px] font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Image — droite */}
+          <div className="overflow-hidden rounded-[16px] md:w-1/2">
+            <img
+              src="/datajob_dashboard.png"
+              alt="Dashboard emploi data France"
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+          </div>
+        </a>
+      </section>
     </>
   );
 }
