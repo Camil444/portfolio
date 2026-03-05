@@ -122,7 +122,7 @@ export default function Home() {
               Quels métiers recrutent le plus ? Quelles compétences font la différence ? Difficile d&apos;y voir clair quand les offres sont dispersées sur des dizaines de plateformes. Ce dashboard agrège et analyse des milliers d&apos;offres d&apos;emploi issues de LinkedIn, Indeed et France Travail pour répondre à ces questions en un coup d&apos;œil. Les données sont collectées automatiquement, nettoyées et normalisées via un pipeline dédié avant d&apos;alimenter les visualisations.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
+              {["Python", "dbt", "Neon", "PostgreSQL", "Next.js"].map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full bg-black/5 px-3 py-1 text-[12px] font-medium"
