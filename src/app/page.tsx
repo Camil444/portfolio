@@ -119,7 +119,7 @@ export default function Home() {
               Le marché de la data en France ↗
             </h3>
             <p className="mt-4 text-[15px] leading-[1.7] text-text-secondary">
-              Ce dashboard analyse les offres d&apos;emploi dans la data en France en collectant et croisant des milliers d&apos;offres provenant de LinkedIn, Indeed ainsi que France Travail. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
+              Quels métiers recrutent le plus ? Quelles compétences font la différence ? Difficile d&apos;y voir clair quand les offres sont dispersées sur des dizaines de plateformes. Ce dashboard agrège et analyse des milliers d&apos;offres d&apos;emploi issues de LinkedIn, Indeed et France Travail pour répondre à ces questions en un coup d&apos;œil. Les données sont collectées automatiquement, nettoyées et normalisées via un pipeline dédié avant d&apos;alimenter les visualisations.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
