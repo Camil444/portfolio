@@ -146,10 +146,10 @@ export default function Home() {
           <div className="flex flex-col justify-center md:w-1/2">
             <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
             <h3 className="text-[20px] font-bold leading-tight">
-              Le marché de l&apos;emploi data en France ↗
+              Le marché de la data en France ↗
             </h3>
             <p className="mt-4 text-[15px] leading-[1.7] text-text-secondary">
-              Ce dashboard analyse le marché de l&apos;emploi data en France en collectant et croisant des milliers d&apos;offres provenant de plusieurs plateformes. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
+              Ce dashboard analyse les offres d&apos;emploi dans la data en France en collectant et croisant des milliers d&apos;offres provenant de LinkedIn, Indeed ainsi que France Travail. Quels métiers sont les plus recherchés ? Quelles compétences sont les plus demandées ? Quel salaire attendre selon son profil ? Les données sont collectées automatiquement, nettoyées et normalisées par un pipeline avant d&apos;être affichées.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["Python", "dbt", "Neon", "PostgreSQL", "Next.js", "Vercel"].map((tag) => (
