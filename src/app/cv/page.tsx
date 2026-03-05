@@ -128,6 +128,68 @@ export default function CVPage() {
           ))}
         </div>
       </div>
+      {/* Hard Skills & Soft Skills */}
+      <div className="mt-16 grid gap-16 md:grid-cols-2">
+        <div>
+          <p className="mb-6 text-[13px] font-medium uppercase tracking-[2px] text-[#888]">
+            Hard Skills
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Python",
+              "SQL",
+              "PostgreSQL",
+              "Power BI",
+              "TIBCO Spotfire",
+              "Excel / VBA",
+              "Power Query",
+              "Pandas",
+              "NumPy",
+              "Scikit-learn",
+              "Matplotlib",
+              "ETL",
+              "Git",
+              "Next.js",
+              "Web Scraping",
+              "Jupyter",
+              "dbt",
+              "Neon",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-border bg-card px-4 py-2 text-[13px] font-medium"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <p className="mb-6 text-[13px] font-medium uppercase tracking-[2px] text-[#888]">
+            Soft Skills
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Autonomie",
+              "Esprit d'analyse",
+              "Communication",
+              "Rigueur",
+              "Adaptabilité",
+              "Travail en équipe",
+              "Gestion des priorités",
+              "Curiosité",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-border bg-card px-4 py-2 text-[13px] font-medium"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

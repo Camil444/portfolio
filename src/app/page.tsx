@@ -8,8 +8,6 @@ const skills = [
   { name: "Excel", logo: "/logos/excel.png" },
   { name: "Spotfire", logo: "/logos/spotfire.png" },
   { name: "dbt", logo: "/logos/dbt.png" },
-  { name: "HTML", logo: "/logos/html.png" },
-  { name: "CSS", logo: "/logos/css.png" },
 ];
 
 

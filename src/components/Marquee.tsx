@@ -28,8 +28,8 @@ export default function Marquee({ skills }: { skills: Skill[] }) {
 
   return (
     <div className="relative overflow-hidden py-4">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-[480px] bg-gradient-to-r from-white to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-[480px] bg-gradient-to-l from-white to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 md:w-[480px] bg-gradient-to-r from-white to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 md:w-[480px] bg-gradient-to-l from-white to-transparent" />
 
       <div className="marquee-wrapper">
         <div className="marquee-content">
